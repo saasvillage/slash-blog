@@ -8,17 +8,17 @@
     <?php wp_head(); ?>
 </head>
 
-<body>
+<body class="overflow-x-hidden pt-24">
     <?php
     get_header();
 
     if (is_single()) {
         include("single-blog.php");
     } else {
-        include("homepage.php");
+        include("page.php");
     }
 
-    wp_footer();
+    include("footer.php");
     ?>
 </body>
 

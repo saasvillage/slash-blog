@@ -7,6 +7,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="bg-gray-50">
     <?php include("nav.php") ?>
-    <div class="py-6 pt-12">
+    <div class="mt-8 md:mt-2 py-6 px-12 bg-gray-50">
