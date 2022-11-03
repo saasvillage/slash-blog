@@ -17,9 +17,6 @@ function slash_blog_customize_register($wp_customize)
         'default'     => get_bloginfo('description') ,
         'transport'   => 'refresh',
     ));
-    $wp_customize->add_setting('sb_theme_main_nav', array(
-        'transport'   => 'refresh',
-    ));
 
 
 
@@ -34,22 +31,5 @@ function slash_blog_customize_register($wp_customize)
         'section'    => 'sb_theme_settings',
         'settings'   => 'sb_theme_homepage_tagline'
     ));
-
-    //TODO: Add controller for main navigation menu configuration
-
-    // $menus = wp_get_nav_menus();
-    // $menuChoices = [];
-    // foreach ( $menus as $menu ) {
-    //     $menuChoices[$menu->slug] = $menu->name;
-    // }
-
-    // $wp_customize->add_control('sb_theme_main_nav', array(
-    //     'label'        => 'Main Navigation Menu',
-    //     'description' => "Create/Edit in Appearance > Menus",
-    //     'section'    => 'sb_theme_settings',
-    //     'settings'   => 'sb_theme_main_nav',
-    //     'type' => 'radio',
-    //     'choices' =>  $menuChoices
-    // ));
 }
 add_action('customize_register', 'slash_blog_customize_register');
