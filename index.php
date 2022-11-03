@@ -1,25 +1,11 @@
-<!DOCTYPE html>
-<html>
+<?php
+get_header();
 
-<head>
-    <meta charset="<?php bloginfo('charset'); ?>">
-    <title><?php wp_title('|', true, 'right'); ?></title>
-    <link rel="stylesheet" href="<?php echo esc_url(get_stylesheet_uri()); ?>" type="text/css" />
-    <?php wp_head(); ?>
-</head>
+if (is_single()) {
+    include("single-blog.php");
+} else {
+    include("page.php");
+}
 
-<body class="overflow-x-hidden pt-24">
-    <?php
-    get_header();
-
-    if (is_single()) {
-        include("single-blog.php");
-    } else {
-        include("page.php");
-    }
-
-    include("footer.php");
-    ?>
-</body>
-
-</html>
+include("footer.php");
+?>

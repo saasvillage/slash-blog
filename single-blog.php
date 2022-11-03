@@ -1,10 +1,12 @@
 <div class="relative">
-    <div class="grid md:grid-cols-4">
-    <div class="w-full col-span-3 bg-white rounded-lg p-12 mb-12 relative mx-auto max-w-7xl">
+    <div class="grid md:grid-cols-9">
+    <div></div>
+    <div class="w-full md:col-span-7 bg-white rounded-lg p-12 mb-12 relative mx-auto max-w-7xl">
 
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                 <div>
-                    <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                    <img class="w-full object-cover" src="<?= get_the_post_thumbnail_url(get_the_ID(), 'medium'); ?>" alt="">
+                    <h2 class="mt-6 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                         <?= the_title() ?>
                     </h2>
                     <p class="mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4">
@@ -25,10 +27,15 @@
                 previous_posts_link();
             }
             ?>
+            <div class="bg-gray-50 p-12 rounded-md">
+            <?php
+            	if ( comments_open() || get_comments_number() ) {
+                    comments_template();
+                }            
+            ?> 
+            </div>
     </div>
-    <div>
-        <?php include("sidebar.php") ?>
-    </div>
+    <div></div>
     </div>
 </div>
 

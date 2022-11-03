@@ -39,7 +39,7 @@ $menu = $defaultMenu;
                     <!-- Logo end -->
                 </div>
                 <div class="items-center bg-gray-800 block w-screen">
-                    <div class="flex space-x-4">
+                    <div class="flex pb-3 pl-3 md:pb-0 md:pl-0  space-x-4">
                         <?php
 
                             foreach($menu as $link => $meta){                                                                
@@ -52,7 +52,7 @@ $menu = $defaultMenu;
             <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <a href="/hire-us">
                     <button type="button"
-                        class="w-36 py-4 px-6 items-center rounded-md border border-transparent bg-indigo-600 font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                        class="relative -top-3 md:top-0 w-32 py-3 w-32 py-3  items-center rounded-md border border-transparent bg-indigo-600 font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
                         Hire us
                     </button>
                 </a>
