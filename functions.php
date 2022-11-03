@@ -7,7 +7,7 @@ add_theme_support('post-thumbnails');
 
 //Returns page title
 function sb_theme_get_page_title(){		
-	return is_category() ? single_cat_title('', false) :  get_theme_mod( 'homepage_title' );
+	return is_category() ? single_cat_title('', false) :  "test";
 }
 
 //Returns page description/tagline
