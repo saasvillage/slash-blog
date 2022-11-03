@@ -6,9 +6,9 @@
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                 <div>
                     <img class="w-full object-cover" src="<?= get_the_post_thumbnail_url(get_the_ID(), 'large'); ?>" alt="">
-                    <h2 class="mt-6 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                    <h1 class="mt-6 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                         <?= the_title() ?>
-                    </h2>
+                    </h1>
                     <p class="mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4">
                         <?= the_excerpt() ?>
                     </p>
@@ -28,6 +28,9 @@
             }
             ?>
             <div class="bg-gray-50 mt-8 p-12 rounded-md">
+            <p class="mt-6 text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">
+                Discussions
+            </p>
             <?php
             	if ( comments_open() || get_comments_number() ) {
                     comments_template();
