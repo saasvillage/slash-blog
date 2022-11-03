@@ -1,7 +1,7 @@
 <div class="relative">
     <div class="grid md:grid-cols-9">
     <div></div>
-    <div class="w-full md:col-span-7 bg-white rounded-lg p-12 mb-12 relative mx-auto max-w-7xl">
+    <div class="w-full md:col-span-7 bg-white rounded-lg p-2 md:p-12 mb-12 relative mx-auto max-w-7xl">
 
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                 <div>
