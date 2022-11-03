@@ -27,7 +27,7 @@
                 previous_posts_link();
             }
             ?>
-            <div class="bg-gray-50 mt-8 p-12 rounded-md">
+            <div class="bg-gray-50 mt-8 p-4 md:p-12 rounded-md">
             <p class="mt-6 text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">
                 Discussions
             </p>
