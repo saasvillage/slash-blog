@@ -17,7 +17,7 @@
 
                     <div class="overflow-hidden bg-white rounded-lg shadow-lg">
                         <div class="flex-shrink-0">
-                            <a href="<?= get_post_permalink() ?>" class="hover:underline">
+                            <a href="<?= the_permalink() ?>" class="hover:underline">
                                 <img class="h-48 w-full object-cover" src="<?= get_the_post_thumbnail_url(get_the_ID(), 'large'); ?>" alt="">
                             </a>
                         </div>
@@ -31,7 +31,7 @@
                                         <?= $catName ?>
                                     </a>
                                 </p>
-                                <a href="<?= get_post_permalink() ?>" class="mt-2 block">
+                                <a href="<?= the_permalink() ?>" class="mt-2 block">
                                     <p class="text-xl font-semibold text-gray-900"><?= the_title() ?></p>
                                     <p class="mt-3 text-base text-gray-500">
                                         <?= the_excerpt() ?>
