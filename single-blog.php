@@ -5,7 +5,7 @@
 
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                 <div>
-                    <img class="w-full object-cover" src="<?= get_the_post_thumbnail_url(get_the_ID(), 'large'); ?>" alt="">
+                    <img class="w-full rounded-md object-cover" src="<?= get_the_post_thumbnail_url(get_the_ID(), 'large'); ?>" alt="">
                     <h1 class="mt-6 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                         <?= the_title() ?>
                     </h1>
