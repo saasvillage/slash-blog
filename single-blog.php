@@ -27,7 +27,7 @@
                 previous_posts_link();
             }
             ?>
-            <div class="bg-gray-50 mt-4 p-12 rounded-md">
+            <div class="bg-gray-50 mt-8 p-12 rounded-md">
             <?php
             	if ( comments_open() || get_comments_number() ) {
                     comments_template();
