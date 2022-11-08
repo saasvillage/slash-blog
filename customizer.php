@@ -17,6 +17,22 @@ function slash_blog_customize_register($wp_customize)
         'default'     => get_bloginfo('description') ,
         'transport'   => 'refresh',
     ));
+    $wp_customize->add_setting('sb_theme_nav_classes', array(
+        'default'     => "bg-gray-800" ,
+        'transport'   => 'refresh',
+    ));
+    $wp_customize->add_setting('sb_theme_nav_cta_classes', array(
+        'default'     => "absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0" ,
+        'transport'   => 'refresh',
+    ));
+    $wp_customize->add_setting('sb_theme_nav_cta_button_text', array(
+        'default'     => "Hire us" ,
+        'transport'   => 'refresh',
+    ));
+    $wp_customize->add_setting('sb_theme_nav_cta_button_link', array(
+        'default'     => "/hire-us" ,
+        'transport'   => 'refresh',
+    ));
 
 
 
@@ -30,6 +46,26 @@ function slash_blog_customize_register($wp_customize)
         'label'        => 'Homepage Tagline',
         'section'    => 'sb_theme_settings',
         'settings'   => 'sb_theme_homepage_tagline'
+    ));
+    $wp_customize->add_control('sb_theme_nav_classes', array(
+        'label'        => 'Nav CSS Classes',
+        'section'    => 'sb_theme_settings',
+        'settings'   => 'sb_theme_nav_classes'
+    ));
+    $wp_customize->add_control('sb_theme_nav_cta_button_text', array(
+        'label'        => 'Nav CTA Button Text',
+        'section'    => 'sb_theme_settings',
+        'settings'   => 'sb_theme_nav_cta_button_text'
+    ));
+    $wp_customize->add_control('sb_theme_nav_cta_button_link', array(
+        'label'        => 'Nav CTA Button Link',
+        'section'    => 'sb_theme_settings',
+        'settings'   => 'sb_theme_nav_cta_button_link'
+    ));
+    $wp_customize->add_control('sb_theme_nav_cta_classes', array(
+        'label'        => 'Nav CTA Button Link',
+        'section'    => 'sb_theme_settings',
+        'settings'   => 'sb_theme_nav_cta_classes'
     ));
 }
 add_action('customize_register', 'slash_blog_customize_register');

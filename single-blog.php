@@ -1,7 +1,7 @@
 <div class="relative">
     <div class="grid md:grid-cols-9">
     <div></div>
-    <div class="w-full md:col-span-7 bg-white rounded-lg p-2 mt-4 md:p-12 mb-12 relative mx-auto max-w-7xl">
+    <div class="w-full md:col-span-5 bg-white rounded-lg p-2 mt-4 md:p-6 mb-12 relative mx-auto max-w-7xl pb-12 md:pb-12">
 
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                 <div>
@@ -27,8 +27,8 @@
                 previous_posts_link();
             }
             ?>
-            <div class="bg-gray-50 mt-8 p-4 md:p-12 rounded-md">
-            <p class="mt-6 text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">
+            <div class="bg-gray-50 mt-8 p-4 md:p-12  rounded-md">
+            <p class="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">
                 Discussions
             </p>
             <?php
@@ -37,6 +37,9 @@
                 }            
             ?> 
             </div>
+    </div>
+    <div class="mt-4 w-full md:col-span-2">
+        <?php get_sidebar() ?>
     </div>
     <div></div>
     </div>

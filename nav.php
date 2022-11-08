@@ -19,7 +19,7 @@ $defaultMenu = [
 ];
 $menu = $defaultMenu;
 ?>
-<nav class="bg-gray-800 fixed z-50 w-full top-0">
+<nav class="<?= get_theme_mod( 'sb_theme_nav_classes' ) ?> fixed z-50 w-full top-0">
     <div class="py-4 mx-auto max-w-7xl md:px-2  lg:px-8">
         <div class="relative flex h-16 items-center justify-between">
             <div class="grid grid-cols-1 md:grid-cols-4  items-center justify-center">
@@ -38,7 +38,7 @@ $menu = $defaultMenu;
                     </a>
                     <!-- Logo end -->
                 </div>
-                <div class="items-center bg-gray-800 block w-screen">
+                <div class="items-center <?= get_theme_mod( 'sb_theme_nav_classes' ) ?> block w-screen">
                     <div class="flex pb-3 pl-3 md:pb-0 md:pl-0  space-x-4">
                         <?php
 
@@ -49,11 +49,11 @@ $menu = $defaultMenu;
                     </div>
                 </div>
             </div>
-            <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <a href="/hire-us">
+            <div class="<?= get_theme_mod( 'sb_theme_nav_cta_classes' ) ?>">
+                <a href="<?= get_theme_mod( 'sb_theme_nav_cta_button_link' ) ?>">
                     <button type="button"
                         class="relative -top-3 md:top-0 w-32 py-3 w-32 py-3  items-center rounded-md border border-transparent bg-indigo-600 font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-                        Hire us
+                        <?= get_theme_mod( 'sb_theme_nav_cta_button_text' ) ?>
                     </button>
                 </a>
             </div>
