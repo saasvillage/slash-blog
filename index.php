@@ -8,4 +8,6 @@ if (is_single()) {
 }
 
 include("footer.php");
+wp_footer();
+
 ?>

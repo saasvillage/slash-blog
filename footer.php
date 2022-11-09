@@ -56,6 +56,15 @@
     </div>
 </footer>
 
-</body>
+<script>
+    var mobileMenuButton = document.getElementById("mobile-menu-button");
+    if(mobileMenuButton){
+        mobileMenuButton.onclick = function(){
+            var mobileMenu = document.getElementById("mobile-menu");
+            mobileMenu.style.display = mobileMenu.style.display != "block" ? "block":"none"
+        }
+    }        
+</script>
 
+</body>
 </html>

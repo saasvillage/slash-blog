@@ -1,4 +1,8 @@
 <?php
+if (is_user_logged_in()) {
+    show_admin_bar(false);
+}
+
 //Add logo support
 add_theme_support('custom-logo');
 
