@@ -73,12 +73,18 @@ $menu = $defaultMenu;
 
     <div class="hidden" id="mobile-menu">
         <div class="space-y-1 px-2 pt-2 pb-3 sm:px-3">
-            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
             <?php
             foreach ($menu as $link => $meta) {
                 echo '<a href="' . $link . '" class="' . ($meta['current'] ? 'bg-gray-900 text-white' : 'text-gray-300') . ' hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">' . $meta['title'] . '</a>';
             }
             ?>
+            <div class="relative top-2 <?= get_theme_mod('sb_theme_nav_cta_classes') ?>">
+                <a href="<?= get_theme_mod('sb_theme_nav_cta_button_link') ?>">
+                    <button type="button" class="relative -top-3 md:top-0 w-32 py-3 w-32 py-3  items-center rounded-md border border-transparent bg-indigo-600 font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                        <?= get_theme_mod('sb_theme_nav_cta_button_text') ?>
+                    </button>
+                </a>
+            </div>
         </div>
     </div>
 </nav>
