@@ -21,7 +21,7 @@ $menu = $defaultMenu;
 ?>
 <nav class="<?= get_theme_mod('sb_theme_nav_classes') ?> fixed block z-50 w-full top-0">
     <div class="md:py-4 mx-auto max-w-7xl md:px-2  lg:px-8">
-        <div class="flex h-16 justify-between">
+        <div class="flex h-16 justify-center md:justify-between">
             <div class="flex">
                 <div class="-ml-2 mr-2 flex items-center md:hidden">
                     <!-- Mobile menu button -->
