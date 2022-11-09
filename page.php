@@ -55,7 +55,7 @@
 
             <?php else : ?>
 
-                <p>No posts found. :(</p>
+                <p class="mt-24">No posts found.</p>
 
             <?php endif; ?>
 

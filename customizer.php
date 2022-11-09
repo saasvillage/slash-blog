@@ -33,6 +33,10 @@ function slash_blog_customize_register($wp_customize)
         'default'     => "/hire-us" ,
         'transport'   => 'refresh',
     ));
+    $wp_customize->add_setting('sb_theme_sidebar_recent_posts_count', array(
+        'default'     => 5 ,
+        'transport'   => 'refresh',
+    ));
 
 
 
@@ -66,6 +70,11 @@ function slash_blog_customize_register($wp_customize)
         'label'        => 'Nav CTA Button Link',
         'section'    => 'sb_theme_settings',
         'settings'   => 'sb_theme_nav_cta_classes'
+    ));
+    $wp_customize->add_control('sb_theme_sidebar_recent_posts_count', array(
+        'label'        => 'Nav Sidebar Recent Posts Count',
+        'section'    => 'sb_theme_settings',
+        'settings'   => 'sb_theme_sidebar_recent_posts_count'
     ));
 }
 add_action('customize_register', 'slash_blog_customize_register');
