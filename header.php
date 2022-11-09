@@ -21,4 +21,4 @@
 <body class="bg-gray-50">
     <?php include("gtm_body.php") ?>
     <?php include("nav.php") ?>
-    <div class="md:mt-0 py-6 pt-12 px-2 md:px-12 bg-gray-100">
+    <div class="md:mt-12 py-6 pt-12 px-2 md:px-12 bg-gray-100">
