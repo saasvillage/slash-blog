@@ -8,7 +8,19 @@ $defaultMenu = [
         "title" => "Blog",
         "current" => true
     ],
+    "/blog1" => [
+        "title" => "Blog",
+        "current" => true
+    ],
+    "/blog2" => [
+        "title" => "Blog",
+        "current" => true
+    ],
     "/#services" => [
+        "title" => "Services",
+        "current" => false
+    ],
+    "/#servieces" => [
         "title" => "Services",
         "current" => false
     ],
