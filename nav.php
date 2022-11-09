@@ -22,7 +22,7 @@ $menu = $defaultMenu;
 <nav class="<?= get_theme_mod('sb_theme_nav_classes') ?> fixed block z-50 w-full top-0">
     <div class="md:py-4 mx-auto max-w-7xl md:px-2  lg:px-8">
         <div class="flex h-16 justify-center md:justify-between">
-            <div class="flex">
+            <div class="flex  w-full md:w-auto">
                 <div class="-ml-2 mr-2 flex items-center md:hidden">
                     <!-- Mobile menu button -->
                     <button id="mobile-menu-button" type="button" class="ml-4 inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
