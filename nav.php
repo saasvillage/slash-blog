@@ -35,14 +35,14 @@ $menu = $defaultMenu;
                         </svg>
                     </button>
                 </div>
-                <div class="flex flex-shrink-0 items-center">
+                <div class="flex flex-grow md:flex-shrink-0 items-center">
                     <!-- Logo start -->
-                    <a href="/">
+                    <a href="/" class="w-full md:w-auto text-center">
                         <?php
                         $custom_logo_id = get_theme_mod('custom_logo');
                         $logo = wp_get_attachment_image_src($custom_logo_id, 'full');
                         if (has_custom_logo()) {
-                            echo '<img class="relative md:top-3 md:top-0 h-auto" src="' . esc_url($logo[0]) . '" alt="' . get_bloginfo('name') . '">';
+                            echo '<img class="inline-block relative -left-5 md:top-3 md:top-0 h-auto" src="' . esc_url($logo[0]) . '" alt="' . get_bloginfo('name') . '">';
                         } else {
                             echo '<h1>' . get_bloginfo('name') . '</h1>';
                         }
