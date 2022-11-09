@@ -1,6 +1,6 @@
 <div class="relative mt-4 md:mt-0">
     <div class="grid md:grid-cols-12">
-        <div class="blog-content w-full lg:col-start-2 col-span-8 lg:col-span-7 bg-white rounded-lg p-2 mt-4 md:p-6 mb-12 relative mx-auto max-w-7xl pb-12 md:pb-12">
+        <div class="blog-content w-full xl:col-start-2 col-span-8 xl:col-span-7 bg-white rounded-lg p-2 mt-4 md:p-6 mb-12 relative mx-auto max-w-7xl pb-12 md:pb-12">
 
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                     <img class="w-full rounded-md object-cover" src="<?= get_the_post_thumbnail_url(get_the_ID(), 'large'); ?>" alt="">
@@ -37,7 +37,7 @@
                     ?>
                 </div>
         </div>
-        <div class="mt-4 w-full md:col-span-4 lg:col-span-3">
+        <div class="mt-4 w-full md:col-span-4 xl:col-span-3">
             <?php get_sidebar() ?>
         </div>
         <div></div>
