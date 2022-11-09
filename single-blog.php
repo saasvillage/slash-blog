@@ -1,4 +1,4 @@
-<div class="relative">
+<div class="relative mt-4 md:mt-0">
     <div class="grid md:grid-cols-9">
     <div></div>
     <div class="blog-content w-full md:col-span-5 bg-white rounded-lg p-2 mt-4 md:p-6 mb-12 relative mx-auto max-w-7xl pb-12 md:pb-12">
