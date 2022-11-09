@@ -38,7 +38,7 @@
             ?> 
             </div>
     </div>
-    <div class="mt-4 w-full  md:col-span-3 lg:col-span-2">
+    <div class="mt-4 w-full  md:col-span-3 xl:col-span-2">
         <?php get_sidebar() ?>
     </div>
     <div></div>
