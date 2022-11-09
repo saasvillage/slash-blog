@@ -59,7 +59,7 @@ $menu = $defaultMenu;
                     ?>
                 </div>
             </div>
-            <div class="hidden mt-1 pt-1 md:block  items-center">
+            <div class="hidden mt-1 md:block  items-center">
                 <div class="<?= get_theme_mod('sb_theme_nav_cta_classes') ?>">
                     <a href="<?= get_theme_mod('sb_theme_nav_cta_button_link') ?>">
                         <button type="button" class="relative -top-3 md:top-0 w-32 py-3 w-32 py-3  items-center rounded-md border border-transparent bg-indigo-600 font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
