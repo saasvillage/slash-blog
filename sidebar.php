@@ -52,8 +52,8 @@
                 <div class="min-w-0 flex-1">
                     <a href="/blog/<?= $post['post_name'] ?> " class="block focus:outline-none">
                         <span class="absolute inset-0" aria-hidden="true"></span>
-                        <p class="truncate text-sm font-medium text-gray-800"><?php print_r($post['post_title']) ?></p>
-                        <p class="truncate text-sm text-gray-500"><?= $post['post_excerpt'] ?> </p>
+                        <p class="md:truncate text-sm font-medium text-gray-800"><?php print_r($post['post_title']) ?></p>
+                        <p class="md:truncate text-sm text-gray-500 overflow-scroll"><?= $post['post_excerpt'] ?> </p>
                     </a>
                 </div>
             </div>
