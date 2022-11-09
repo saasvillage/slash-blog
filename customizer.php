@@ -67,7 +67,7 @@ function slash_blog_customize_register($wp_customize)
         'settings'   => 'sb_theme_nav_cta_button_link'
     ));
     $wp_customize->add_control('sb_theme_nav_cta_classes', array(
-        'label'        => 'Nav CTA Button CSS Classesd',
+        'label'        => 'Nav CTA Button CSS Classes',
         'section'    => 'sb_theme_settings',
         'settings'   => 'sb_theme_nav_cta_classes'
     ));
