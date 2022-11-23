@@ -1,4 +1,8 @@
 <?php
+if (is_user_logged_in()) {
+    show_admin_bar(false);
+}
+
 //Add logo support
 add_theme_support('custom-logo');
 
@@ -7,6 +11,9 @@ add_theme_support('post-thumbnails');
 
 //Returns page title
 function sb_theme_get_page_title(){		
+	if(is_search()){
+		return "Search: ".get_search_query();
+	};
 	return is_category() ? single_cat_title('', false) :  get_theme_mod( 'sb_theme_homepage_title' );
 }
 
