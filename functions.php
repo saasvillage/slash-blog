@@ -1,6 +1,6 @@
 <?php
 if (is_user_logged_in()) {
-    show_admin_bar(false);
+    show_admin_bar(true);
 }
 
 //Add logo support
